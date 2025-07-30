@@ -1,0 +1,252 @@
+{
+  "sources": {
+    "yahoo_finance": {
+      "name": "Yahoo Finance",
+      "base_url": "https://finance.yahoo.com",
+      "search_url": "https://finance.yahoo.com/quote/{ticker}?p={ticker}&.tsrc=fin-srch",
+      "selectors": {
+        "articles": "li.js-stream-content",
+        "title": "h3",
+        "summary": "p",
+        "date": "time",
+        "link": "a"
+      },
+      "rate_limit": 2,
+      "enabled": true,
+      "priority": 1
+    },
+    "marketwatch": {
+      "name": "MarketWatch",
+      "base_url": "https://www.marketwatch.com",
+      "search_url": "https://www.marketwatch.com/investing/stock/{ticker}/news",
+      "selectors": {
+        "articles": "div.element.element--article",
+        "title": "h3.article__headline a",
+        "summary": "p.article__summary",
+        "date": "span.article__timestamp",
+        "link": "h3.article__headline a"
+      },
+      "rate_limit": 3,
+      "enabled": false,
+      "priority": 2
+    },
+    "google_news": {
+      "name": "Google News",
+      "base_url": "https://news.google.com",
+      "search_url": "https://news.google.com/search?q={ticker}+stock&hl=en-US&gl=US&ceid=US:en",
+      "selectors": {
+        "articles": "article",
+        "title": "h3, h4",
+        "summary": ".DY5T1d",
+        "date": "time",
+        "link": "a"
+      },
+      "rate_limit": 2,
+      "enabled": true,
+      "priority": 3
+    },
+    "reuters": {
+      "name": "Reuters",
+      "base_url": "https://www.reuters.com",
+      "search_url": "https://www.reuters.com/site-search/?query={ticker}",
+      "selectors": {
+        "articles": ".search-result-item",
+        "title": "h3.search-result-title a",
+        "summary": "p.search-result-excerpt",
+        "date": "time",
+        "link": "h3.search-result-title a"
+      },
+      "rate_limit": 2,
+      "enabled": true,
+      "priority": 4
+    },
+    "bloomberg": {
+      "name": "Bloomberg",
+      "base_url": "https://www.bloomberg.com",
+      "search_url": "https://www.bloomberg.com/search?query={ticker}",
+      "selectors": {
+        "articles": "li.search-result-story",
+        "title": "h1 a, h2 a, h3 a",
+        "summary": "div.search-result-story__body",
+        "date": "time",
+        "link": "h1 a, h2 a, h3 a"
+      },
+      "rate_limit": 2,
+      "enabled": true,
+      "priority": 5
+    },
+    "cnbc": {
+      "name": "CNBC",
+      "base_url": "https://www.cnbc.com",
+      "search_url": "https://www.cnbc.com/search/?query={ticker}",
+      "selectors": {
+        "articles": "div.SearchResultCard",
+        "title": "a.Card-title",
+        "summary": "div.Card-description",
+        "date": "time",
+        "link": "a.Card-title"
+      },
+      "rate_limit": 3,
+      "enabled": true,
+      "priority": 6
+    },
+    "benzinga": {
+      "name": "Benzinga",
+      "base_url": "https://www.benzinga.com",
+      "search_url": "https://www.benzinga.com/quote/{ticker}/news",
+      "selectors": {
+        "articles": "div.news-item",
+        "title": "a.news-item__title",
+        "summary": "div.news-item__excerpt",
+        "date": "span.news-item__date",
+        "link": "a.news-item__title"
+      },
+      "rate_limit": 3,
+      "enabled": true,
+      "priority": 7
+    },
+    "bbc_business": {
+      "name": "BBC Business",
+      "base_url": "https://www.bbc.com",
+      "search_url": "https://www.bbc.co.uk/search?q={ticker}+stock&filter=news",
+      "selectors": {
+        "articles": "article",
+        "title": "h1, h3, h4",
+        "summary": "p",
+        "date": "time",
+        "link": "a"
+      },
+      "rate_limit": 2,
+      "enabled": true,
+      "priority": 8
+    },
+    "financial_times": {
+      "name": "Financial Times",
+      "base_url": "https://www.ft.com",
+      "search_url": "https://www.ft.com/search?q={ticker}",
+      "selectors": {
+        "articles": ".o-teaser",
+        "title": ".o-teaser__heading a",
+        "summary": ".o-teaser__standfirst",
+        "date": "time",
+        "link": ".o-teaser__heading a"
+      },
+      "rate_limit": 2,
+      "enabled": true,
+      "priority": 9
+    },
+    "economic_times": {
+      "name": "Economic Times",
+      "base_url": "https://economictimes.indiatimes.com",
+      "search_url": "https://economictimes.indiatimes.com/topic/{ticker}",
+      "selectors": {
+        "articles": "div.eachStory",
+        "title": "h3 a",
+        "summary": "p",
+        "date": "time",
+        "link": "h3 a"
+      },
+      "rate_limit": 3,
+      "enabled": true,
+      "priority": 10
+    }
+  },
+  "scraping_config": {
+    "user_agents": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+      "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+    ],
+    "timeout": 30,
+    "max_retries": 3,
+    "retry_delay": 5,
+    "headers": {
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Connection": "keep-alive",
+      "Upgrade-Insecure-Requests": "1",
+      "Cache-Control": "no-cache",
+      "Pragma": "no-cache"
+    }
+  },
+  "date_config": {
+    "default_lookback_days": 3,
+    "max_lookback_days": 7,
+    "date_formats": [
+      "%Y-%m-%d",
+      "%m/%d/%Y",
+      "%B %d, %Y",
+      "%b %d, %Y",
+      "%d %B %Y",
+      "%Y-%m-%d %H:%M:%S",
+      "%Y-%m-%dT%H:%M:%S",
+      "%Y-%m-%dT%H:%M:%SZ",
+      "%d-%m-%Y",
+      "%d/%m/%Y"
+    ]
+  },
+  "cache_config": {
+    "enabled": true,
+    "cache_duration_hours": 24,
+    "max_cache_size_mb": 100,
+    "cache_directory": "cache/news_cache"
+  },
+  "event_keywords": {
+    "political": [
+      "election",
+      "government",
+      "policy",
+      "regulation",
+      "president",
+      "senate",
+      "congress",
+      "federal",
+      "reserve",
+      "trade war",
+      "tariff",
+      "sanction",
+      "geopolitical",
+      "political"
+    ],
+    "economic": [
+      "gdp",
+      "inflation",
+      "interest rate",
+      "fed",
+      "federal reserve",
+      "recession",
+      "economic",
+      "unemployment",
+      "job report",
+      "consumer price",
+      "cpi",
+      "earnings"
+    ],
+    "market": [
+      "market crash",
+      "bull market",
+      "bear market",
+      "volatility",
+      "index",
+      "dow jones",
+      "nasdaq",
+      "s&p",
+      "correction"
+    ],
+    "company": [
+      "earnings",
+      "revenue",
+      "profit",
+      "loss",
+      "guidance",
+      "merger",
+      "acquisition",
+      "ipo",
+      "bankruptcy",
+      "lawsuit"
+    ]
+  },
+  "last_updated": "2025-07-14T23:23:32.320684"
+}
