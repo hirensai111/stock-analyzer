@@ -130,7 +130,7 @@ else:
 
 ## 📊 Sample Output
 
-🔍 **[Download Sample Excel Report](./samples/Sample.xlsx)**
+🔍 **[Download Sample Excel Report](../samples/Sample.xlsx)**
 
 This sample report demonstrates the full capabilities of the Stock Analyzer, including:
 
@@ -240,7 +240,7 @@ python main.py --ticker AAPL
 
 **Output**: `AAPL_analysis_report_20250730_143022.xlsx`
 
-📊 **[View Sample Report](./samples/Sample.xlsx)** - See what the generated Excel reports look like
+📊 **[View Sample Report](../samples/Sample.xlsx)** - See what the generated Excel reports look like
 
 ### Batch Processing
 
