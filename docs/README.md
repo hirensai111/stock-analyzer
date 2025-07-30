@@ -128,7 +128,7 @@ else:
 
 ## 📊 Sample Output
 
-🔍 **[Download Sample Excel Report](./samples/Sample.xlsx)**
+🔍 **[Download Sample Excel Report]((https://github.com/hirensai111/stock-analyzer/blob/main/samples/Sample.xlsx))**
 
 This sample report demonstrates the full capabilities of the Stock Analyzer, including:
 
