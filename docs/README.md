@@ -1,7 +1,5 @@
 # Stock Analyzer
 
->Financial analysis platform with AI-powered insights and professional reporting
-
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen.svg)]()
@@ -429,7 +427,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Yahoo Finance for market data
 - Alpha Vantage for additional data sources
 - Python community for excellent libraries
-
----
-
-**Built with ❤️ for financial analysis and investment research**
