@@ -1,5 +1,7 @@
 # Stock Analyzer
 
+> Financial analysis platform with AI-powered insights and professional reporting
+
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen.svg)]()
@@ -128,7 +130,7 @@ else:
 
 ## 📊 Sample Output
 
-🔍 **[Download Sample Excel Report]((https://github.com/hirensai111/stock-analyzer/blob/main/samples/Sample.xlsx))**
+🔍 **[Download Sample Excel Report](./samples/Sample.xlsx)**
 
 This sample report demonstrates the full capabilities of the Stock Analyzer, including:
 
@@ -238,7 +240,7 @@ python main.py --ticker AAPL
 
 **Output**: `AAPL_analysis_report_20250730_143022.xlsx`
 
-📊 **[View Sample Report](./samples/AAPL_sample_analysis_report.xlsx)** - See what the generated Excel reports look like
+📊 **[View Sample Report](./samples/Sample.xlsx)** - See what the generated Excel reports look like
 
 ### Batch Processing
 
@@ -394,6 +396,15 @@ python sentiment_analyzer.py
 # Test with sample data
 USE_SAMPLE_DATA=True python main.py --ticker TEST
 ```
+
+## 📈 Roadmap
+
+- [ ] Real-time data streaming
+- [ ] Web-based dashboard
+- [ ] Mobile app integration
+- [ ] Additional data sources
+- [ ] Machine learning models
+- [ ] Custom alert system
 
 ## 🤝 Contributing
 
