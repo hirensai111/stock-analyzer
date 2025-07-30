@@ -368,15 +368,6 @@ python sentiment_analyzer.py
 USE_SAMPLE_DATA=True python main.py --ticker TEST
 ```
 
-## 📈 Roadmap
-
-- [ ] Real-time data streaming
-- [ ] Web-based dashboard
-- [ ] Mobile app integration
-- [ ] Additional data sources
-- [ ] Machine learning models
-- [ ] Custom alert system
-
 ## 🤝 Contributing
 
 1. Fork the repository
