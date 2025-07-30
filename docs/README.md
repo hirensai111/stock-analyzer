@@ -1,6 +1,6 @@
 # Stock Analyzer
 
-> Enterprise-grade financial analysis platform with AI-powered insights and professional reporting
+>Financial analysis platform with AI-powered insights and professional reporting
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
@@ -128,7 +128,34 @@ else:
     print(f"Error: {result['error']}")
 ```
 
-## ✨ Features
+## 📊 Sample Output
+
+🔍 **[Download Sample Excel Report](./samples/Sample.xlsx)**
+
+This sample report demonstrates the full capabilities of the Stock Analyzer, including:
+
+- **Executive Summary** with key metrics and trading signals
+- **Professional Charts** embedded as high-resolution images
+- **Technical Analysis** with 9+ indicators and conditional formatting
+- **AI-Powered Event Analysis** with sentiment scoring
+- **Risk Metrics** including Sharpe ratio and maximum drawdown
+- **Data Quality Reports** with validation scoring
+
+### Report Preview
+
+| Sheet | Content | Key Features |
+|-------|---------|-------------|
+| 📋 Summary | Executive dashboard | KPIs, signals, company overview |
+| 🏢 Company Info | Business profile | Financials, ratios, business description |
+| 📈 Price Charts | Technical visualizations | 4-panel charts with indicators |
+| 🔧 Technical Analysis | Indicator data | 60-day data with conditional formatting |
+| 🤖 Sentiment Analysis | AI event breakdown | Article analysis with confidence scores |
+| 📊 Performance Metrics | Risk analysis | Returns, volatility, benchmarking |
+| 📁 Raw Data | Complete dataset | Historical prices with event highlighting |
+| ✅ Data Quality | Validation reports | Completeness scoring and integrity checks |
+| ℹ️ Metadata | Documentation | Analysis details and disclaimers |
+
+---
 
 ### Technical Analysis
 
@@ -212,6 +239,8 @@ python main.py --ticker AAPL
 ```
 
 **Output**: `AAPL_analysis_report_20250730_143022.xlsx`
+
+📊 **[View Sample Report](./samples/AAPL_sample_analysis_report.xlsx)** - See what the generated Excel reports look like
 
 ### Batch Processing
 
@@ -368,15 +397,6 @@ python sentiment_analyzer.py
 USE_SAMPLE_DATA=True python main.py --ticker TEST
 ```
 
-## 📈 Roadmap
-
-- [ ] Real-time data streaming
-- [ ] Web-based dashboard
-- [ ] Mobile app integration
-- [ ] Additional data sources
-- [ ] Machine learning models
-- [ ] Custom alert system
-
 ## 🤝 Contributing
 
 1. Fork the repository
@@ -409,3 +429,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Yahoo Finance for market data
 - Alpha Vantage for additional data sources
 - Python community for excellent libraries
+
+---
+
+**Built with ❤️ for financial analysis and investment research**
